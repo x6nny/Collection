@@ -21,9 +21,9 @@ This module simplifies handling tagged instances, automatically managing connect
 | --------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------ | --------- |
 | `Collection(tagName: string)`                 | Creates a new collection object for the given tag                                      | `Collection`                                                 |           |
 | `collection:GetTagged()`                      | Returns all instances currently tagged                                                 | `{ Instance }`                                               |           |
-| `collection:AddTag(instance: Instance)`         | {Instance})`                                                                           | Adds the tag to one or more instances                        | `()`      |
-| `collection:RemoveTag(instance: Instance)`      | {Instance})`                                                                           | Removes the tag from one or more instances                   | `()`      |
-| `collection:HasTag(instance: Instance)`         | {Instance})`                                                                           | Checks whether an instance or table of instances has the tag | `boolean` |
+| `collection:AddTag(instance: Instance)`       | Adds the tag to one or more instances                        							 | `()`      													|
+| `collection:RemoveTag(instance: Instance)`    | Removes the tag from one or more instances                   							 | `()`      													|
+| `collection:HasTag(instance: Instance)`       | Checks whether an instance or table of instances has the tag 							 | `boolean` 													|
 | `collection:tagAdded(callback, ancestors?)`   | Connects a listener for when a tagged instance is added; optional ancestor filtering   | `() -> ()` (disconnect function)                             |           |
 | `collection:tagRemoved(callback, ancestors?)` | Connects a listener for when a tagged instance is removed; optional ancestor filtering | `() -> ()` (disconnect function)                             |           |
 
